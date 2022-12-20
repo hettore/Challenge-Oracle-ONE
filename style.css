@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #E5E5E5;
+}
+
+.logo {
+    width: 31px;
+    margin: 40px 0 0 84px;
+}
+
+.input-principal {
+    background: #E5E5E5;
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    border: none;
+    font-size: 32px;
+    font-family: Inter;
+    color: #0A3871;
+}
+
+.input-principal:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.paragrafo-botoes {
+    width: 252px;
+    height: 18px;
+    bottom: 0;
+    position: absolute;
+    margin: auto 240px 155px;
+    font-size: 12px;
+}
+
+.paragrafo-botoes:before {
+    margin: 0 8px 0 0;
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
+}
+
+
+.caixa {
+    background: #FFFFFF;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    right: 40px;
+    border-radius: 32px;
+}
+
+.caixa img {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 48px;
+    top: 283px;
+}
+
+.informacoes-caixa1 {
+    margin: 619px 40px 307px 40px;
+}
+
+.botoes-principais {
+    bottom: 0;
+    position: absolute;
+    margin: auto 240px 72px;
+}
+
+.criptografar {
+    margin: 0 24px 0 0;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.descriptografar {
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 5px;    
+}
+
+.rodape {
+    color: darkgreen;
+    font-size: 13px;
+    margin-top: 20px;
+}
