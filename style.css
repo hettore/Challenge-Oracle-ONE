@@ -63,7 +63,42 @@ body {
     content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
 }
 
+#conteudo-caixa-1 {
+    display: block;
+}
 
+#conteudo-caixa-2 {
+    display: none;
+    
+}
+
+.input-caixa {
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 24px 24px;
+    border: none;
+   font-size: 24px;
+}
+
+.input-caixa:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.copiar {
+    display: flex;
+    weight: 680px;
+    height: 67px;
+    position: relative;
+    width: 341px;
+    height: 67px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin: 25px auto 0 auto;
+}
 
 .imagem-caixa {
     position: absolute;
@@ -76,16 +111,12 @@ body {
 
 .mensagens-box {
     text-align: center;
-    position: relative;
+    position: absolute;
     width: 336px;
     height: 122px;
     left: 50%;
     top: 75%;
     transform: translate(-50%, -50%);
-    
-    
-    
-    
 }
 
 .paragrafo1-direita {
@@ -146,3 +177,87 @@ footer {
     
 }
 */
+
+@media screen and (max-width: 480px) {
+    body {
+        display: block;
+    }
+    .logo {
+        display: block;
+        position: relative;
+        width: 30px;
+    }
+
+    .input-principal {
+        display: block;
+        background: #E5E5E5;
+        position: absolute;
+        width: 300px;
+        height: 288px;
+        left: 16px;
+        top: 168px;
+        border: none;
+        font-size: 32px;
+        font-family: Inter;
+        color: #0A3871;
+        margin: 0 16px;
+    }
+
+    .caixa {
+        background: #FFFFFF;
+        position: absolute;
+        width: 327px;
+        height: 186px;
+        left: 0;
+        top: ;
+        right: 40;
+        display: block;
+        
+        
+        
+        border-radius: 32px;
+        margin: -50px 40px 40px 40px;
+        box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+
+    .imagem-caixa {
+        display: none;
+    }
+
+    .botoes-principais {
+        display: block;
+        weight: 300px;
+        height: 67px;
+        bottom: 0;
+        position: relative;
+        margin: 415px 80px 40px 16px;
+        
+    }
+
+    .criptografar {
+       margin: 0 0 24px 0;
+        width: 343px;
+        height: 67px;
+        background: #0A3871;
+        color: #FFFFFF;
+        font-size: 16px;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+    
+    .descriptografar {
+        width: 343px;
+        height: 67px;
+        background: #D8DFE8;
+        color: #0A3871;
+        font-size: 16px;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+
+   
+
+    
+
+    
+}
