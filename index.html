@@ -27,29 +27,30 @@
                 </div>
             </div>
             <div id="conteudo-caixa-2">
-                <textarea name="" id="text-caixa" cols="26" rows="15" class="input-caixa"></textarea>
-                <input onclick="copiarTexto()" type="submit" value="Copiar" class="copiar">
+                <p id="text-caixa" class="input-caixa"></p>
+                <!--<textarea name="" id="text-caixa" cols="26" rows="15" class="input-caixa"></textarea>-->
+                <input onclick="copiarTexto()" id="copiarTexto" type="button" value="Copiar" class="copiar">
             </div>
         </div>
     </header>
     
     <main>
         <form>
-            <textarea name="" id="text" cols="70" rows="10" class="input-principal" placeholder="Digite seu texto"></textarea>
+            <textarea name="" id="texto-inserido" cols="70" rows="10" class="input-principal" placeholder="Digite seu texto"></textarea>
             
 
             <p class="paragrafo-botoes">Apenas letras minúsculas e sem acento.</p>
             <div class="botoes-principais">
-                <input onclick="myFunction()" type="button" value="Criptografar" class="criptografar">
-                <input onclick="myFunction()" type="button" value="Descriptografar" class="descriptografar">
+                <input onclick="myFunction(), criptografa()" id="criptografar" type="button" value="Criptografar" class="criptografar">
+                <input onclick="myFunction(), descriptografar()" type="button" value="Descriptografar" class="descriptografar">
             </div>
         </form>
 
     </main>
-    <!--
+    
     <footer>
         <p class="rodape">&copy; Hettore Eduardo - Challenge Oracle ONE</p>
     </footer>
-    -->
+   
 </body>
 </html>
