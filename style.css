@@ -230,3 +230,63 @@ footer {
         top: 100%;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    body {
+        display: block;
+    }
+
+    .paragrafo-botoes {
+        position: relative;
+        top: 400px;
+    }
+
+    .botoes-principais {
+        position: relative;
+        top: -320px;
+        margin: 90% 80px 40px 12%;
+        display: flex;
+    }
+
+    .caixa {
+        position: relative;
+        width: 80%;
+        height: 12rem;
+        left: 10%;
+        top: 720px;
+        margin: 0 0 2% 0;
+    }
+
+    .imagem-caixa {
+        display: none;
+    }
+
+    .mensagens-box {
+        top: 30%;
+        width: 80%;
+    }
+
+    .paragrafo1-direita {
+        width: 80%;
+    }
+
+    .paragrafo2-direita {
+        top: -20px;
+    }
+
+    .caixa p {
+        padding: 16px 16px;
+    }
+
+    .copiar {
+        width: 85%;
+        top: 55%;
+    }
+
+    footer {
+        position: absolute;
+        top: 90%;
+    }
+
+}
