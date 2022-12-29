@@ -18,7 +18,7 @@ function copiarTexto() {
   navigator.clipboard.writeText(textoCopiado);
   // textoCopiado.setSelectionRange(0, 99999);
   // document.execCommand("copy");
-  alert("Copiado");
+  alert("Copiado!");
   document.getElementById('texto-inserido').value = "";
 }
 
