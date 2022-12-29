@@ -1,6 +1,10 @@
-body {
+
+html, body {
     font-family: 'Inter', sans-serif;
     background: #E5E5E5;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
 }
 
 .logo {
@@ -165,6 +169,7 @@ footer {
 
     body {
         display: block;
+        justify-content: center;
     }
 
     .logo {
@@ -172,37 +177,44 @@ footer {
     }
 
     .botoes-principais {
-        
+        width: ;
+        padding: 16px;
         position: relative;
-        top: -320px;
-        margin: 90% 80px 40px 8%;
+        top: -170px;
+        margin: auto;
         display: block;
     }
 
     .criptografar {
+        width: 100%;
         margin: 0 0 20px 0;
+    }
+
+    .descriptografar {
+        width: 100%;
     }
 
     .paragrafo-botoes {
         position: relative;
-        top: 1px;
-        margin: -29px 948px 16px 10%;
+        top: -170px;
+        margin: auto;
     }
     
     .input-principal {
         position: relative;
-        top: -100px;
+        top: -190px;
         width: 80%;
         left: 8%;
     }
 
     .caixa {
+        
         position: relative;
-        width: 80%;
+        width: 100%;
         height: 12rem;
-        left: 8%;
-        top: 720px;
-        margin: 0 0 2% 0;
+        left: 0;
+        top: 550px;
+        margin: auto;
     }
 
     .caixa p {
@@ -226,8 +238,8 @@ footer {
     }
 
     footer {
+        top: 130px;
         position: relative;
-        top: 100%;
     }
 }
 
