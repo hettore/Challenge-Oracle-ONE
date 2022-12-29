@@ -3,7 +3,7 @@ var resultado;
 function myFunction() {
   var x = document.getElementById('conteudo-caixa-1');
   var y = document.getElementById('conteudo-caixa-2');
-  if (x.style.display === 'none') {
+  if (document.getElementById('texto-inserido').value == "") {
       x.style.display = 'block';
       y.style.display = 'none';
     } else {
@@ -13,10 +13,13 @@ function myFunction() {
 }
 
 function copiarTexto() {
-  let textoCopiado = document.getElementById('text-caixa').textContent;
+  var textoCopiado = document.getElementById('text-caixa').textContent;
+  //var campoTexto = document.getElementById('texto-inserido').value;
   navigator.clipboard.writeText(textoCopiado);
-  textoCopiado.setSelectionRange(0, 99999);
-  document.execCommand("copy");
+  // textoCopiado.setSelectionRange(0, 99999);
+  // document.execCommand("copy");
+  alert("Copiado");
+  document.getElementById('texto-inserido').value = "";
 }
 
 function criptografa() {
