@@ -161,7 +161,6 @@ footer {
     font-size: 13px;
 }
 
-
 @media screen and (max-width: 480px) {
 
     body {
@@ -173,6 +172,7 @@ footer {
     }
 
     .botoes-principais {
+        
         position: relative;
         top: -320px;
         margin: 90% 80px 40px 8%;
@@ -231,7 +231,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) {
+/* @media (min-width: 820px) {
 
     body {
         display: block;
@@ -289,4 +289,4 @@ footer {
         top: 90%;
     }
 
-}
+} */
