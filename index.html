@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Oracle ONE</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1><img src="Vector.png" alt="Logo Alura"></h1>
-        </div>
-        <div class="caixa">
-            <div id="conteudo-caixa-1">
-                <div class="imagem-caixa">
-                    <img src="High quality products 1 1.png" class="desenho" alt="Desenho de uma pessoa com a lupa no olho">
-                </div>
-                <div class="mensagens-box">
-                    <p class="paragrafo1-direita">Nenhuma mensagem encontrada</p>
-                    <p class="paragrafo2-direita">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge Oracle ONE</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><img src="Vector.png" alt="Logo Alura"></h1>
             </div>
-            <div id="conteudo-caixa-2">
-                <p id="text-caixa" class="input-caixa"></p>
-                <!--<textarea name="" id="text-caixa" cols="26" rows="15" class="input-caixa"></textarea>-->
-                <input onclick="copiarTexto()" id="copiarTexto" type="button" value="Copiar" class="copiar">
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <form>
-            <textarea name="" id="texto-inserido" cols="70" rows="10" class="input-principal" placeholder="Digite seu texto"></textarea>
-            
 
-            <p class="paragrafo-botoes">Apenas letras minúsculas e sem acento.</p>
-            <div class="botoes-principais">
-                <input onclick="myFunction(), criptografa()" id="criptografar" type="button" value="Criptografar" class="criptografar">
-                <input onclick="myFunction(), descriptografar()" type="button" value="Descriptografar" class="descriptografar">
-            </div>
-        </form>
+            <div class="caixa">
+                <div id="conteudo-caixa-1">
+                    <div class="imagem-caixa">
+                        <img src="High quality products 1 1.png" class="desenho" alt="Desenho de uma pessoa com a lupa no olho">
+                    </div>
+                    <div class="mensagens-box">
+                        <p class="paragrafo1-direita">Nenhuma mensagem encontrada</p>
+                        <p class="paragrafo2-direita">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
 
-    </main>
+                <div id="conteudo-caixa-2">
+                    <p id="text-caixa" class="input-caixa"></p>
+                    <input onclick="copiarTexto()" id="copiarTexto" type="button" value="Copiar" class="copiar">
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <form>
+                <textarea name="" id="texto-inserido" cols="70" rows="10" class="input-principal" placeholder="Digite seu texto"></textarea>
+                
+                <p class="paragrafo-botoes">Apenas letras minúsculas e sem acento.</p>
+                
+                <div class="botoes-principais">
+                    <input onclick="myFunction(), criptografa()" id="criptografar" type="button" value="Criptografar" class="criptografar">
+                    <input onclick="myFunction(), descriptografar()" type="button" value="Descriptografar" class="descriptografar">
+                </div>
+            </form>
+
+        </main>
+        
+        <footer>
+            <p class="rodape">&copy; Hettore Eduardo - Challenge Oracle ONE</p>
+        </footer>
     
-    <footer>
-        <p class="rodape">&copy; Hettore Eduardo - Challenge Oracle ONE</p>
-    </footer>
-   
-</body>
+    </body>
 </html>

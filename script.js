@@ -1,12 +1,8 @@
 var resultado;
-var btnCriptografar = document.getElementById('criptografar');
-var btnCopiar = document.getElementById('copiarTexto');
-
 
 function myFunction() {
   var x = document.getElementById('conteudo-caixa-1');
   var y = document.getElementById('conteudo-caixa-2');
-  //var texto = document.getElementById('text').value;
   if (x.style.display === 'none') {
       x.style.display = 'block';
       y.style.display = 'none';
@@ -45,6 +41,5 @@ function descriptografar() {
 }
 
 
-//btnCriptografar.onclick = criptografa;
-//btnCopiar.onclick = copiarTexto;
+
 

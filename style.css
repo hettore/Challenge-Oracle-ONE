@@ -1,7 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
     background: #E5E5E5;
-    
 }
 
 .logo {
@@ -35,7 +34,6 @@ body {
     font-family: Inter;
     color: #0A3871;
     resize: none;
-    
 }
 
 .input-principal:focus {
@@ -47,11 +45,9 @@ body {
     width: 252px;
     height: 18px;
     position: absolute;
-    
     margin: -29px 948px 16px 100px;
     font-size: 12px;
     color: #495057;
-    
 }
 
 .paragrafo-botoes:before {
@@ -66,7 +62,6 @@ body {
 
 #conteudo-caixa-2 {
     display: none;
-    
 }
 
 .input-caixa {
@@ -76,7 +71,6 @@ body {
     border: none;
     font-size: 24px;
     color: #495057;
-    
 }
 
 .copiar {
@@ -159,99 +153,80 @@ footer {
     text-align: center;
     margin: 30px 30px;
     position: absolute;
-    color: #FFF;
-    
-    
-      
+    color: #FFF; 
 }
 
 .rodape {
     color: darkgreen;
     font-size: 13px;
-    
 }
 
 
 @media screen and (max-width: 480px) {
+
     body {
         display: block;
     }
+
     .logo {
-        display: block;
-        position: relative;
-        width: 30px;
+        width: 10px;
     }
 
-    .input-principal {
+    .botoes-principais {
+        position: relative;
+        top: -320px;
+        margin: 90% 80px 40px 8%;
         display: block;
-        background: #E5E5E5;
-        position: absolute;
-        width: 300px;
-        height: 288px;
-        left: 16px;
-        top: 168px;
-        border: none;
-        font-size: 32px;
-        font-family: Inter;
-        color: #0A3871;
-        margin: 0 16px;
+    }
+
+    .criptografar {
+        margin: 0 0 20px 0;
+    }
+
+    .paragrafo-botoes {
+        position: relative;
+        top: 1px;
+        margin: -29px 948px 16px 10%;
+    }
+    
+    .input-principal {
+        position: relative;
+        top: -100px;
+        width: 80%;
+        left: 8%;
     }
 
     .caixa {
-        background: #FFFFFF;
-        position: absolute;
-        width: 327px;
-        height: 186px;
-        left: 0;
-        top: ;
-        right: 40;
-        display: block;
-        
-        
-        
-        border-radius: 32px;
-        margin: -50px 40px 40px 40px;
-        box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+        position: relative;
+        width: 80%;
+        height: 12rem;
+        left: 8%;
+        top: 720px;
+        margin: 0 0 2% 0;
+    }
+
+    .caixa p {
+        padding: 16px 16px;
+    }
+
+    .mensagens-box {
+        top: 20%;
+    }
+
+    .paragrafo1-direita {
+        left: -14px;
     }
 
     .imagem-caixa {
         display: none;
     }
 
-    .botoes-principais {
-        display: block;
-        weight: 300px;
-        height: 67px;
-        bottom: 0;
+    .copiar {
+        width: 85%;
+    }
+
+    footer {
         position: relative;
-        margin: 415px 80px 40px 16px;
-        
+        top: 100%;
     }
-
-    .criptografar {
-       margin: 0 0 24px 0;
-        width: 343px;
-        height: 67px;
-        background: #0A3871;
-        color: #FFFFFF;
-        font-size: 16px;
-        border-radius: 24px;
-        cursor: pointer;
-    }
-    
-    .descriptografar {
-        width: 343px;
-        height: 67px;
-        background: #D8DFE8;
-        color: #0A3871;
-        font-size: 16px;
-        border-radius: 24px;
-        cursor: pointer;
-    }
-
-   
-
-    
-
-    
 }
