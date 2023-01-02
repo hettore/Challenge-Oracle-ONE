@@ -38,6 +38,7 @@ html, body {
     font-family: Inter;
     color: #0A3871;
     resize: none;
+    text-transform: lowercase;
 }
 
 .input-principal:focus {
