@@ -244,7 +244,7 @@ footer {
     }
 }
 
-/* @media (min-width: 820px) {
+@media (max-width: 900px) and (min-width: 481px) {
 
     body {
         display: block;
@@ -302,4 +302,4 @@ footer {
         top: 90%;
     }
 
-} */
+}
