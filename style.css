@@ -125,7 +125,6 @@ html, body {
 
 .botoes-principais {
     display: flex;
-    weight: 680px;
     height: 67px;
     bottom: 0;
     position: relative;
@@ -178,7 +177,6 @@ footer {
     }
 
     .botoes-principais {
-        width: ;
         padding: 16px;
         position: relative;
         top: -170px;
@@ -219,7 +217,7 @@ footer {
     }
 
     .caixa p {
-        padding: 16px 16px;
+        padding: 16px;
     }
 
     .mensagens-box {
@@ -247,28 +245,38 @@ footer {
 @media (max-width: 900px) and (min-width: 481px) {
 
     body {
+        width: 100%;
         display: block;
+        justify-content: center;
     }
 
+    .input-principal {
+        position: relative;
+        top: -190px;
+        width: 80%;
+        left: 8%;
+    }
+    
     .paragrafo-botoes {
         position: relative;
-        top: 400px;
+        top: 12px;
     }
 
     .botoes-principais {
         position: relative;
-        top: -320px;
-        margin: 90% 80px 40px 12%;
+        padding: 16px;
+        margin: auto;
+        justify-content: center;
         display: flex;
     }
 
     .caixa {
         position: relative;
-        width: 80%;
+        width: auto;
         height: 12rem;
-        left: 10%;
-        top: 720px;
-        margin: 0 0 2% 0;
+        left: 0;
+        top: 600px;
+        margin: auto;
     }
 
     .imagem-caixa {
@@ -298,8 +306,8 @@ footer {
     }
 
     footer {
-        position: absolute;
-        top: 90%;
+        position: relative;
+        top: 190px;
     }
 
 }
