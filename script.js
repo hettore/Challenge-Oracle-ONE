@@ -17,14 +17,13 @@ function temCaracteresEspeciais() {
 
   textoInserido = document.getElementById('texto-inserido').value;
   
-  const pattern = /[A-ZÀ-ü]/;
+  const pattern = /[0-9A-ZÀ-ü@´`^~'"]/;
   if (textoInserido.match(pattern)) {
     alert("Por favor use somente letras minúsculas e sem acento!")
     document.getElementById('texto-inserido').value = "";
     x.style.display = 'block';
     y.style.display = 'none';
   }
-  
 }
 
 function copiaTexto() {
