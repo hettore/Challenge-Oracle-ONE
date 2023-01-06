@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -30,7 +29,7 @@
 
                 <div id="conteudo-caixa-2">
                     <p id="text-caixa" class="input-caixa"></p>
-                    <input onclick="copiarTexto()" id="copiarTexto" type="button" value="Copiar" class="copiar">
+                    <input id="copiarTexto" type="button" value="Copiar" class="copiar">
                 </div>
             </div>
         </header>
@@ -42,8 +41,8 @@
                 <p class="paragrafo-botoes">Apenas letras minúsculas e sem acento.</p>
                 
                 <div class="botoes-principais">
-                    <input onclick="myFunction(), criptografa()" id="criptografar" type="button" value="Criptografar" class="criptografar">
-                    <input onclick="myFunction(), descriptografar()" type="button" value="Descriptografar" class="descriptografar">
+                    <input id="criptografa" type="button" value="Criptografar" class="criptografar">
+                    <input id="descriptografa" type="button" value="Descriptografar" class="descriptografar">
                 </div>
             </form>
 
@@ -52,6 +51,6 @@
         <footer>
             <p class="rodape">&copy; Hettore Eduardo - Challenge Oracle ONE</p>
         </footer>
-    
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 var resultado;
 
-function myFunction() {
+function verificaInput() {
   var x = document.getElementById('conteudo-caixa-1');
   var y = document.getElementById('conteudo-caixa-2');
   if (document.getElementById('texto-inserido').value == "") {
@@ -10,14 +10,11 @@ function myFunction() {
         x.style.display = 'none';
         y.style.display = 'block';
     }
-}
+  }
 
-function copiarTexto() {
+function copiaTexto() {
   var textoCopiado = document.getElementById('text-caixa').textContent;
-  //var campoTexto = document.getElementById('texto-inserido').value;
   navigator.clipboard.writeText(textoCopiado);
-  // textoCopiado.setSelectionRange(0, 99999);
-  // document.execCommand("copy");
   alert("Copiado!");
   document.getElementById('texto-inserido').value = "";
 }
@@ -33,7 +30,7 @@ function criptografa() {
   
 }
 
-function descriptografar() {
+function descriptografa() {
   textoInserido = document.getElementById('texto-inserido').value;
   resultado = textoInserido.replace(/enter/gi, "e")
                            .replace(/imes/gi, "i")
@@ -43,6 +40,26 @@ function descriptografar() {
   document.getElementById('text-caixa').innerHTML = resultado;
 }
 
+function verificaCriptografa() {
+
+  verificaInput();
+  criptografa();
+
+}
+
+function verificaDescriptografa() {
+
+  verificaInput();
+  descriptografa();
+
+}
 
 
+var copiar = document.querySelector("#copiarTexto");
+copiar.onclick = copiaTexto;
 
+var btnCriptografa = document.querySelector("#criptografa");
+btnCriptografa.onclick = verificaCriptografa;
+
+var btnDescriptografa = document.querySelector("#descriptografa");
+btnDescriptografa.onclick = verificaDescriptografa;
