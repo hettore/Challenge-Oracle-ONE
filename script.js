@@ -1,9 +1,10 @@
 var resultado;
+var x = document.getElementById('conteudo-caixa-1');
+var y = document.getElementById('conteudo-caixa-2');
 
-function verificaInput() {
-  var x = document.getElementById('conteudo-caixa-1');
-  var y = document.getElementById('conteudo-caixa-2');
-  if (document.getElementById('texto-inserido').value == "") {
+function temTexto() {
+  var textoInserido = document.getElementById('texto-inserido').value;
+  if (textoInserido == "") {
       x.style.display = 'block';
       y.style.display = 'none';
     } else {
@@ -11,6 +12,20 @@ function verificaInput() {
         y.style.display = 'block';
     }
   }
+
+function temCaracteresEspeciais() {
+
+  textoInserido = document.getElementById('texto-inserido').value;
+  
+  const pattern = /[A-ZÀ-ü]/;
+  if (textoInserido.match(pattern)) {
+    alert("Por favor use somente letras minúsculas e sem acento!")
+    document.getElementById('texto-inserido').value = "";
+    x.style.display = 'block';
+    y.style.display = 'none';
+  }
+  
+}
 
 function copiaTexto() {
   var textoCopiado = document.getElementById('text-caixa').textContent;
@@ -20,17 +35,24 @@ function copiaTexto() {
 }
 
 function criptografa() {
-  var textoInserido = document.getElementById('texto-inserido').value;
+
+  temTexto();
+  temCaracteresEspeciais();
+
+  textoInserido = document.getElementById('texto-inserido').value;
   resultado = textoInserido.replace(/e/gi, "enter")
                            .replace(/i/gi, "imes")
                            .replace(/a/gi, "ai")
                            .replace(/o/gi, "ober")
                            .replace(/u/gi, "ufat");
   document.getElementById('text-caixa').innerHTML = resultado;
-  
 }
 
 function descriptografa() {
+
+  temTexto();
+  temCaracteresEspeciais();
+
   textoInserido = document.getElementById('texto-inserido').value;
   resultado = textoInserido.replace(/enter/gi, "e")
                            .replace(/imes/gi, "i")
@@ -40,26 +62,11 @@ function descriptografa() {
   document.getElementById('text-caixa').innerHTML = resultado;
 }
 
-function verificaCriptografa() {
-
-  verificaInput();
-  criptografa();
-
-}
-
-function verificaDescriptografa() {
-
-  verificaInput();
-  descriptografa();
-
-}
-
-
 var copiar = document.querySelector("#copiarTexto");
 copiar.onclick = copiaTexto;
 
 var btnCriptografa = document.querySelector("#criptografa");
-btnCriptografa.onclick = verificaCriptografa;
+btnCriptografa.onclick = criptografa;
 
 var btnDescriptografa = document.querySelector("#descriptografa");
-btnDescriptografa.onclick = verificaDescriptografa;
+btnDescriptografa.onclick = descriptografa;
