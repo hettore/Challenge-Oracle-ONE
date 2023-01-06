@@ -37,7 +37,6 @@ html, body {
     font-family: Inter;
     color: #0A3871;
     resize: none;
-    //text-transform: lowercase;
 }
 
 .input-principal:focus {
@@ -78,7 +77,6 @@ html, body {
 }
 
 .copiar {
-    weight: 680px;
     height: 67px;
     position: absolute;
     width: 341px;
