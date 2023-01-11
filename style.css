@@ -18,8 +18,7 @@ html, body {
     width: 400px;
     height: 600px;
     left: 800px;
-    top: 40;
-    right: 40;
+    top: 40px;
     border-radius: 32px;
     margin: -50px 40px 40px 40px;
     box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
