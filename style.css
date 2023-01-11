@@ -126,7 +126,7 @@ html, body {
     height: 67px;
     bottom: 0;
     position: relative;
-    margin: 415px 80px 40px 100px;
+    margin: 460px 80px 40px 100px;
 }
 
 .criptografar {
@@ -181,6 +181,7 @@ footer {
         top: -170px;
         margin: auto;
         display: block;
+        min-width: 270px;
     }
 
     .criptografar {
@@ -203,6 +204,7 @@ footer {
         top: -190px;
         width: 80%;
         left: 8%;
+        min-width: 270px;
     }
 
     .caixa {
@@ -212,6 +214,7 @@ footer {
         left: 0;
         top: 550px;
         margin: auto;
+        min-width: 270px;
     }
 
     .caixa p {
@@ -308,4 +311,29 @@ footer {
         top: 190px;
     }
 
+}
+
+@media screen and (min-width: 901px) {
+    body {
+        max-height: 100%;
+        width: 960px;
+        max-width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1230px;
+    }
+
+    .caixa {
+        height: 90%;
+        min-height: 600px;
+        max-height: 700px;
+    }
+
+    footer {
+        top: 10%;
+        position: relative;
+    }
+    
+    
 }
